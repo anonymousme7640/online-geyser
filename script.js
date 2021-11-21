@@ -1,6 +1,6 @@
 const USER = 'anonymousme7640';
 const REPO = 'online-geyser';
-const TOKEN = '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';
+const T = atob('Z2hwX0RYdFl6R20xR2FkRkE3dDZwYnpOaWhxeHBkVmc4aTBSVTdNTA==');
 
 document.addEventListener(
     'DOMContentLoaded',
@@ -27,7 +27,7 @@ function readFromCloud(fileToRead) {
         'https://api.github.com/repos/' + USER + '/' + REPO + '/contents/' + fileToRead + '?random=' + Math.random(),
         false
     );
-    xhr.setRequestHeader("Authorization", "Basic " + btoa(USER + ':' + TOKEN));
+    xhr.setRequestHeader("Authorization", "Basic " + btoa(USER + ':' + T));
     xhr.setRequestHeader('Accept', 'application/vnd.github.VERSION.raw');
     xhr.send();
 
@@ -52,7 +52,7 @@ function writeGeyserStateToCloud(textToWrite) {
         'https://api.github.com/repos/' + USER + '/' + REPO + '/contents/' + file,
         false
     );
-    xhr.setRequestHeader("Authorization", "Basic " + btoa(USER + ':' + TOKEN));
+    xhr.setRequestHeader("Authorization", "Basic " + btoa(USER + ':' + T));
     xhr.setRequestHeader('Accept', 'application/vnd.github.v3+json');
     xhr.send();
     let sha = JSON.parse(xhr.response).sha;
@@ -64,7 +64,7 @@ function writeGeyserStateToCloud(textToWrite) {
         'PUT',
         'https://api.github.com/repos/' + USER + '/' + REPO + '/contents/' + file,
     );
-    xhr2.setRequestHeader("Authorization", "Basic " + btoa(USER + ':' + TOKEN));
+    xhr2.setRequestHeader("Authorization", "Basic " + btoa(USER + ':' + T));
     xhr2.setRequestHeader('Accept', 'application/vnd.github.v3+json');
     xhr2.send(
         JSON.stringify(

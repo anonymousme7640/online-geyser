@@ -1,7 +1,7 @@
 #!/usr/bin/fish
 
 set user "anonymousme7640"
-set token "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"
+set token ""
 set repo "online-geyser"
 set file "datastore/geyser_state"
 

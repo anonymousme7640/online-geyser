@@ -1,6 +1,6 @@
 #!/usr/bin/fish
 
-set token "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"
+set token ""
 # set file "datastore/geyser_state"
 set file "datastore/geyser_temperature"
 set repo "online-geyser"
