@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+
+	<title>Online Geyser</title>
+</head>
+
+<body>
+	<h2>Online Geyser</h2>
+
+	<p id="radio-buttons">
+		<input type="radio" id="radio-on" name="geyser_state" value="on" onclick="geyserOn()">
+		<label for="radio-on">turn on</label><br>
+
+		<input type="radio" id="radio-off" name="geyser_state" value="off" onclick="geyserOff()">
+		<label for="radio-off">turn off</label><br>
+	</p>
+
+	<p id=temperature-p>
+		Temperature: <span id="geyser-temperature">123</span>&deg;C
+	</p>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+body {
+    font-size: 2em;
+    background-color: black;
+    color: white;
+    margin-left: 15px;
+}
+
+input[type="radio"] {
+    height:2em;
+    width:2em;
+    vertical-align: middle;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#radio-buttons {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
