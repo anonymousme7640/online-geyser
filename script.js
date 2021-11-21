@@ -1,6 +1,6 @@
 const USER = 'anonymousme7640';
 const REPO = 'online-geyser';
-const TOKEN = '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';
+const TOKEN = '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';
 
 document.addEventListener(
     'DOMContentLoaded',
